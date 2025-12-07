@@ -1,0 +1,26 @@
+﻿  GameEntities.cpp
+  GameProject.cpp
+  GameSetup.cpp
+C:\Game\GameProject\GameProject\GameSetup.cpp(63,65): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Game\GameProject\GameProject\GameSetup.cpp(63,65): warning C4244:         with
+C:\Game\GameProject\GameProject\GameSetup.cpp(63,65): warning C4244:         [
+C:\Game\GameProject\GameProject\GameSetup.cpp(63,65): warning C4244:             T=unsigned int
+C:\Game\GameProject\GameProject\GameSetup.cpp(63,65): warning C4244:         ]
+C:\Game\GameProject\GameProject\GameSetup.cpp(63,65): warning C4244:         and
+C:\Game\GameProject\GameProject\GameSetup.cpp(63,65): warning C4244:         [
+C:\Game\GameProject\GameProject\GameSetup.cpp(63,65): warning C4244:             T=float
+C:\Game\GameProject\GameProject\GameSetup.cpp(63,65): warning C4244:         ]
+C:\Game\GameProject\GameProject\GameSetup.cpp(63,45): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Game\GameProject\GameProject\GameSetup.cpp(63,45): warning C4244:         with
+C:\Game\GameProject\GameProject\GameSetup.cpp(63,45): warning C4244:         [
+C:\Game\GameProject\GameProject\GameSetup.cpp(63,45): warning C4244:             T=unsigned int
+C:\Game\GameProject\GameProject\GameSetup.cpp(63,45): warning C4244:         ]
+C:\Game\GameProject\GameProject\GameSetup.cpp(63,45): warning C4244:         and
+C:\Game\GameProject\GameProject\GameSetup.cpp(63,45): warning C4244:         [
+C:\Game\GameProject\GameProject\GameSetup.cpp(63,45): warning C4244:             T=float
+C:\Game\GameProject\GameProject\GameSetup.cpp(63,45): warning C4244:         ]
+  GameUIAudio.cpp
+  main.cpp
+  Generating Code...
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  GameProject.vcxproj -> C:\Game\GameProject\x64\Debug\GameProject.exe
