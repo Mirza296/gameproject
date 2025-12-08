@@ -11,7 +11,7 @@
 #include <random>
 #include <iostream>
 
-// ==== CONSTANTS (same as before) ============================================
+// CONSTANTS 
 constexpr float PX = 30.f;             // pixels per meter
 constexpr float DT = 1.f / 60.f;       // timestep
 constexpr int   SUB_STEPS = 4;         // Box2D 3.x sub-steps
@@ -23,7 +23,7 @@ constexpr float WORLD_CEIL = 10.f;
 
 constexpr int   MAX_ENEMIES = 8;
 
-// ==== SMALL HELPERS (same as before) =======================================
+// SMALL HELPERS  
 
 struct Bar { float cx, cy, hx, hy; };
 
@@ -44,7 +44,7 @@ inline float vlen(sf::Vector2f v)
 void addStaticBox(b2WorldId world, float cx, float cy, float hx, float hy);
 bool isGrounded(const b2Vec2& pos, float radius, const std::vector<Bar>& bars);
 
-// ==== GAME OBJECTS (same as before) ========================================
+// GAME OBJECTS  
 
 struct Bullet {
     b2BodyId id{};
@@ -80,7 +80,7 @@ struct Player {
     float muzzleTimer = 0.f;
 };
 
-// ==== MODULE 1 – setup =====================================================
+// ==== MODULE 1: setup =====================================================
 
 void setupWindowAndBackground(
     sf::RenderWindow& window,
@@ -94,7 +94,7 @@ void setupWorldAndArena(
     std::vector<sf::RectangleShape>& barGfx,
     const sf::RenderWindow& window);
 
-// ==== MODULE 2 – entities ==================================================
+// ==== MODULE 2: entities ==================================================
 
 void setupPlayer(Player& player, b2WorldId world);
 
@@ -112,7 +112,7 @@ void shoot(std::deque<Bullet>& bullets,
     float dir,
     b2WorldId world);
 
-// ==== MODULE 3 – UI + audio ===============================================
+// ==== MODULE 3: UI + audio ===============================================
 
 void setupText(sf::Font& font,
     sf::Text& scoreText,
@@ -132,6 +132,6 @@ void setupAudio(sf::SoundBuffer& fireBuffer,
     sf::Sound& lossSound,
     sf::Sound& jumpSound);
 
-// ==== MODULE 4 – whole game ===============================================
+// ==== MODULE 4: whole game ===============================================
 
 int runGame();
